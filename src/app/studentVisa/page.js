@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const studentVisa = () => {
+const StudentVisa = () => {
     const [activeCountry, setActiveCountry] = useState(0);
     const [isVisible, setIsVisible] = useState(false);
 
@@ -326,4 +326,4 @@ const studentVisa = () => {
     );
 };
 
-export default studentVisa;
+export default StudentVisa;
