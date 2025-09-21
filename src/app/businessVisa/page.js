@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-const businessVisa = () => {
+const BusinessVisa = () => {
     const [activeTab, setActiveTab] = useState(0);
     const [isVisible, setIsVisible] = useState(false);
 
@@ -208,4 +208,4 @@ const businessVisa = () => {
     );
 };
 
-export default businessVisa;
+export default BusinessVisa;
