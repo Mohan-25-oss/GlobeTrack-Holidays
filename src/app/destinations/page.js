@@ -198,7 +198,7 @@ export default function Destinations() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.2 }}
                 >
-                    Explore the world's most breathtaking places and start planning your next adventure.
+                    Explore the world&apos;s most breathtaking places and start planning your next adventure.
                 </motion.p>
 
                 {/* Search Bar */}

@@ -1,14 +1,6 @@
-# netlify.toml
 [build]
-  # Netlify build command
   command = "npm run build"
-  # Next.js build output directory
   publish = ".next"
 
-# Next.js plugin
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
-
-# Optional: Environment variables
 [build.environment]
-  NODE_VERSION = "20"
+  NODE_VERSION = "18"

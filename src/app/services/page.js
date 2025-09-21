@@ -34,25 +34,24 @@ const AnimatedCounter = ({ value, duration = 2000 }) => {
     const ref = useRef(null);
 
     useEffect(() => {
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                if (entry.isIntersecting) {
-                    setIsInView(true);
-                }
-            },
-            { threshold: 0.5 }
-        );
+        const element = ref.current; // copy ref at mount time
+        if (!element) return;
 
-        if (ref.current) {
-            observer.observe(ref.current);
-        }
+        const observer = new IntersectionObserver(([entry]) => {
+            if (entry.isIntersecting) {
+                // do something
+            }
+        });
+
+        observer.observe(element);
 
         return () => {
-            if (ref.current) {
-                observer.unobserve(ref.current);
+            if (element) {
+                observer.unobserve(element);
             }
         };
     }, []);
+
 
     useEffect(() => {
         if (!isInView) return;

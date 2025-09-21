@@ -2,9 +2,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import { CheckCircle, Star, Clock, Shield, Zap, Calendar, Plane, Gift } from "lucide-react";
+import { Star, Shield, Zap, Gift, Plane } from "lucide-react";
 
-const indonesiaVisa = {
+const IndonesiaVisa = {
     country: "Indonesia",
     emoji: "❤️",
     title: "ইন্দোনেশিয়া ট্যুরিস্ট ভিসা",
@@ -62,7 +62,7 @@ const indonesiaVisa = {
     ]
 };
 
-export default function indonesia() {
+export default function Indonesia() {
     const [isExpanded, setIsExpanded] = useState(false);
 
     return (
@@ -74,7 +74,7 @@ export default function indonesia() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5 }}
                 >
-                    {indonesiaVisa.emoji} {indonesiaVisa.title}
+                    {IndonesiaVisa.emoji} {IndonesiaVisa.title}
                 </motion.h2>
                 <motion.p
                     className="text-green-600 text-xl md:text-2xl font-semibold mb-4"
@@ -82,7 +82,7 @@ export default function indonesia() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    {indonesiaVisa.subtitle}
+                    {IndonesiaVisa.subtitle}
                 </motion.p>
                 <motion.p
                     className="text-gray-700 text-lg md:text-xl"
@@ -90,7 +90,7 @@ export default function indonesia() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                 >
-                    {indonesiaVisa.description}
+                    {IndonesiaVisa.description}
                 </motion.p>
             </div>
 
@@ -104,10 +104,10 @@ export default function indonesia() {
                 <div className="space-y-3">
                     <h3 className="text-2xl font-bold mb-2 text-gray-800">ভিসার বিবরণ:</h3>
                     <ul className="text-gray-700 space-y-2">
-                        <li className="flex items-center gap-2">✅ ভিসার ধরন: <span className="font-semibold">{indonesiaVisa.type}</span></li>
-                        <li className="flex items-center gap-2">✅ ফি: <span className="font-semibold">{indonesiaVisa.fee}</span></li>
-                        <li className="flex items-center gap-2">✅ বৈধতা: <span className="font-semibold">{indonesiaVisa.validity}</span></li>
-                        <li className="flex items-center gap-2">✅ প্রক্রিয়াকরণ সময়: <span className="font-semibold">{indonesiaVisa.processingTime}</span></li>
+                        <li className="flex items-center gap-2">✅ ভিসার ধরন: <span className="font-semibold">{IndonesiaVisa.type}</span></li>
+                        <li className="flex items-center gap-2">✅ ফি: <span className="font-semibold">{IndonesiaVisa.fee}</span></li>
+                        <li className="flex items-center gap-2">✅ বৈধতা: <span className="font-semibold">{IndonesiaVisa.validity}</span></li>
+                        <li className="flex items-center gap-2">✅ প্রক্রিয়াকরণ সময়: <span className="font-semibold">{IndonesiaVisa.processingTime}</span></li>
                         <li className="flex items-center gap-2">✨ আপনার ভ্রমণ হবে ঝামেলামুক্ত এবং আনন্দময়।</li>
                         <li className="flex items-center gap-2">✨ সুন্দর সমুদ্র সৈকত ও প্রাকৃতিক সৌন্দর্য উপভোগ করুন।</li>
                     </ul>
@@ -117,7 +117,7 @@ export default function indonesia() {
                 <div>
                     <h3 className="text-2xl font-bold mb-2 text-gray-800">প্রয়োজনীয়তা:</h3>
                     <ul className="text-gray-700 space-y-2 list-disc list-inside">
-                        {indonesiaVisa.requirements.map((req, idx) => (
+                        {IndonesiaVisa.requirements.map((req, idx) => (
                             <li key={idx}>{req}</li>
                         ))}
                         <li>✨ আপনার ভ্রমণ হবে নিরাপদ এবং সুষ্ঠু পরিকল্পিত।</li>
@@ -129,7 +129,7 @@ export default function indonesia() {
                 <div>
                     <h3 className="text-2xl font-bold mb-2 text-gray-800">কেন আমাদের নির্বাচন করবেন?</h3>
                     <ul className="text-gray-700 space-y-2">
-                        {indonesiaVisa.features.map((feat, idx) => (
+                        {IndonesiaVisa.features.map((feat, idx) => (
                             <li key={idx} className="flex items-center gap-2">
                                 <span className="text-green-500 text-lg">✅</span>
                                 <span>{feat.slice(2)}</span>
@@ -142,7 +142,7 @@ export default function indonesia() {
 
                 {/* Benefits Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                    {indonesiaVisa.benefits.map((benefit, index) => (
+                    {IndonesiaVisa.benefits.map((benefit, index) => (
                         <motion.div
                             key={index}
                             className="bg-green-50 p-4 rounded-lg border border-green-100"
@@ -164,7 +164,7 @@ export default function indonesia() {
                 <div className="mt-6">
                     <h3 className="text-2xl font-bold mb-4 text-gray-800">সন্তুষ্ট গ্রাহকদের কথা:</h3>
                     <div className="space-y-4">
-                        {indonesiaVisa.testimonials.map((testimonial, index) => (
+                        {IndonesiaVisa.testimonials.map((testimonial, index) => (
                             <motion.div
                                 key={index}
                                 className="bg-gray-50 p-4 rounded-lg border-l-4 border-green-400"
@@ -172,7 +172,7 @@ export default function indonesia() {
                                 animate={{ opacity: 1, x: 0 }}
                                 transition={{ duration: 0.4, delay: index * 0.2 }}
                             >
-                                <p className="text-gray-700 italic">"{testimonial.comment}"</p>
+                                <p className="text-gray-700 italic">{testimonial.comment}</p>
                                 <p className="text-right font-semibold text-green-800 mt-2">- {testimonial.name}</p>
                             </motion.div>
                         ))}

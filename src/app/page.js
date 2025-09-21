@@ -164,7 +164,7 @@ const SpecialOffers = () => {
     <section className="py-16 bg-gradient-to-r from-blue-50 to-indigo-50">
 
       <div className="text-gray-700 text-lg">
-        <safeText text={text} />
+        <SafeText text={text} />
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -179,7 +179,7 @@ const SpecialOffers = () => {
             Special <span className="text-blue-500">Travel Offers</span>
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Don't miss these limited-time deals for your next adventure
+            Do not miss these limited-time deals for your next adventure
           </p>
         </motion.div>
 
@@ -194,10 +194,12 @@ const SpecialOffers = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="relative h-48 overflow-hidden">
-                <img
+                <Image
                   src={offer.image}
                   alt={offer.title}
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  width={500}
+                  height={300}
+                  unoptimized
                 />
                 <div className="absolute top-4 right-4 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
                   {offer.discount}
@@ -280,10 +282,12 @@ const Testimonials = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <div className="flex items-center gap-4 mb-4">
-                <img
+                <Image
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover"
+                  width={500}
+                  height={300}
+                  unoptimized
                 />
                 <div>
                   <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
@@ -299,7 +303,7 @@ const Testimonials = () => {
                   />
                 ))}
               </div>
-              <p className="text-gray-700 italic">"{testimonial.content}"</p>
+              <p className="text-gray-700 italic">{testimonial.content}</p>
             </motion.div>
           ))}
         </div>

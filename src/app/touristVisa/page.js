@@ -1,8 +1,9 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
-const touristVisa = () => {
+const TouristVisa = () => {
     const [activeCategory, setActiveCategory] = useState('all');
     const [isVisible, setIsVisible] = useState(false);
 
@@ -88,11 +89,11 @@ const touristVisa = () => {
             >
                 {/* Header */}
                 <div className="text-center mb-12">
-                    <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 pb-3">
+                    <h1 className="text-4xl font-extrabold sm:text-5xl sm:tracking-tight lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 pb-3">
                         Discover Amazing Destinations
                     </h1>
                     <p className="mt-5 max-w-xl mx-auto text-xl text-gray-600">
-                        Explore the world's most beautiful places and create unforgettable memories.
+                        Explore the world&apos;s most beautiful places and create unforgettable memories.
                     </p>
                 </div>
 
@@ -123,7 +124,7 @@ const touristVisa = () => {
                             className="bg-white rounded-2xl overflow-hidden shadow-xl transition-transform duration-300 hover:scale-105"
                         >
                             <div className="relative h-56 overflow-hidden">
-                                <img
+                                <Image
                                     src={destination.image}
                                     alt={destination.name}
                                     className="w-full h-full object-cover"
@@ -191,4 +192,4 @@ const touristVisa = () => {
     );
 };
 
-export default touristVisa;
+export default TouristVisa;

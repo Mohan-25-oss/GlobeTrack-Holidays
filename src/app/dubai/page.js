@@ -266,7 +266,7 @@ export default function DubaiVisa() {
                                             />
                                         ))}
                                     </div>
-                                    <p className="text-gray-700 italic">"{testimonial.comment}"</p>
+                                    <p className="text-gray-700 italic">{testimonial.comment}</p>
                                     <p className="text-right font-semibold text-yellow-700 mt-2">- {testimonial.name}</p>
                                 </motion.div>
                             ))}

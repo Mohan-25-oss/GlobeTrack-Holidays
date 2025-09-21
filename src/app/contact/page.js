@@ -81,7 +81,7 @@ export default function Contact() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
                 >
-                    Have questions or want to book your next trip? Reach out to us and we'll get back to you within 24 hours.
+                    Have questions or want to book your next trip? Reach out to us and we will get back to you within 24 hours.
                 </motion.p>
             </section>
 
@@ -195,7 +195,7 @@ export default function Contact() {
                                 transition={{ duration: 0.3 }}
                             >
                                 <CheckCircle size={20} />
-                                <span>Message sent! We'll contact you soon.</span>
+                                <span>Message sent! We will contact you soon.</span>
                             </motion.div>
                         )}
                     </AnimatePresence>

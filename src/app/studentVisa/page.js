@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const StudentVisa = () => {
     const [activeCountry, setActiveCountry] = useState(0);
@@ -278,7 +279,7 @@ const StudentVisa = () => {
                                 className="bg-white rounded-2xl p-6 shadow-lg"
                             >
                                 <div className="flex items-center mb-4">
-                                    <img
+                                    <Image
                                         src={testimonial.avatar}
                                         alt={testimonial.name}
                                         className="w-12 h-12 rounded-full mr-4 object-cover"
@@ -288,7 +289,7 @@ const StudentVisa = () => {
                                         <p className="text-gray-600 text-sm">{testimonial.country}</p>
                                     </div>
                                 </div>
-                                <p className="text-gray-700 italic">"{testimonial.content}"</p>
+                                <p className="text-gray-700 italic">{testimonial.content}</p>
                                 <div className="flex mt-4">
                                     {[...Array(5)].map((_, i) => (
                                         <svg key={i} className="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
