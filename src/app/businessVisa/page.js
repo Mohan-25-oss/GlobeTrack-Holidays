@@ -151,7 +151,7 @@ const BusinessVisa = () => {
                 <div className="mb-20">
                     <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">What Our Clients Say</h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className=" grid grid-cols-1 md:grid-cols-3 gap-8">
                         {testimonials.map((testimonial, index) => (
                             <motion.div
                                 key={index}
@@ -160,11 +160,12 @@ const BusinessVisa = () => {
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                                 className="bg-white rounded-2xl p-6 shadow-lg"
                             >
-                                <div className="flex items-center mb-4">
+                                <div className="block items-center mb-4">
                                     <Image
                                         src={testimonial.avatar}
                                         alt={testimonial.name}
-                                        className="w-12 h-12 rounded-full mr-4 object-cover"
+                                        width={500}
+                                        height={300}
                                     />
                                     <div>
                                         <h4 className="font-bold text-gray-900">{testimonial.name}</h4>

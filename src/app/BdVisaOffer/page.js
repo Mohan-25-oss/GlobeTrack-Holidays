@@ -1,7 +1,6 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import BdVisaOffers from "../BdVisaOffer/page";
 
 const visaDetails = [
     {
@@ -10,7 +9,7 @@ const visaDetails = [
         title: "Malaysia Tourist Visa",
         points: [
             "Visa Type: eVisa / eNTRI",
-            "Fee: SGD 45",
+            "Fee: 5000.00 Taka",
             "Validity: 6 months",
             "Processing Time: 3–5 working days",
             "Requirements: Passport ≥6 months, WorkPermit/S-Pass, Passport-sized photo",
@@ -24,7 +23,7 @@ const visaDetails = [
         title: "Indonesia Tourist Visa",
         points: [
             "Visa Type: Visa on Arrival (VOA) / eVisa",
-            "Fee: SGD 70",
+            "Fee: 7000.00 Taka",
             "Validity: 30 days (extendable once)",
             "Processing Time: Online eVisa 3–5 days, VOA immediate",
             "Requirements: Passport ≥6 months, Ferry/Flight tickets, Hotel/Stay address",
@@ -38,7 +37,7 @@ const visaDetails = [
         title: "Thailand Tourist Visa",
         points: [
             "Visa Type: Tourist Visa / 30-day Visa Exemption",
-            "Fee: SGD 65",
+            "Fee: 7000.00 Taka",
             "Validity: 30 days",
             "Processing Time: eVisa 3–5 days, VOA immediate",
             "Requirements: Passport ≥6 months, Flight tickets, Hotel/Stay address",
@@ -52,7 +51,7 @@ const visaDetails = [
         title: "India Tourist Visa",
         points: [
             "Visa Type: e-Tourist Visa (30-day / 1-year)",
-            "Fee: SGD 65",
+            "Fee: 6500.00 Taka",
             "Validity: 3 months or 6 months depending on type",
             "Processing Time: Online 3–5 days",
             "Requirements: Passport ≥6 months, Hotel/Stay address",
@@ -66,7 +65,7 @@ const visaDetails = [
         title: "Dubai Tourist Visa",
         points: [
             "Visa Type: Tourist eVisa",
-            "Fee: SGD 85",
+            "Fee: 8500.00 Taka",
             "Validity: 30 days (extendable once)",
             "Processing Time: Online 3–5 days",
             "Requirements: Passport ≥6 months, Flight tickets, Hotel/Stay address",
@@ -76,15 +75,12 @@ const visaDetails = [
     },
 ];
 
-export default function VisaOffers() {
+export default function BdVisaOffers() {
     return (
         <section className="py-16 px-4 sm:px-6 lg:px-20 bg-gray-50">
-
-            <BdVisaOffers></BdVisaOffers>
-
             <div className="max-w-7xl mx-auto text-center mb-12 py-7">
                 <h2 className="text-4xl md:text-5xl font-extrabold text-blue-800 mb-4 drop-shadow-lg">
-                    🛂 Visa Fees from Singapore
+                    🛂 Visa Fees from Bangladesh
                 </h2>
                 <p className="text-gray-600 text-lg md:text-xl">
                     Apply for your visa safely and quickly. Expert assistance and online booking available 24/7.
@@ -118,7 +114,7 @@ export default function VisaOffers() {
                             ))}
                         </ul>
 
-                        <div className="mt-auto space-y-4 flex flex-row sm:flex-row sm:justify-center sm:gap-4">
+                        <div className="mt-auto space-y-4 flex flex-col sm:flex-row sm:justify-center sm:gap-4">
                             {/* Apply Now Button */}
                             <Link href="/contact">
                                 <button className="bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 hover:from-pink-600 hover:via-purple-600 hover:to-indigo-600 text-white font-bold px-6 py-3 rounded-full shadow-lg hover:shadow-2xl transition-transform duration-300 w-full">

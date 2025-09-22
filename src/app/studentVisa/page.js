@@ -282,7 +282,8 @@ const StudentVisa = () => {
                                     <Image
                                         src={testimonial.avatar}
                                         alt={testimonial.name}
-                                        className="w-12 h-12 rounded-full mr-4 object-cover"
+                                        width={500}
+                                        height={300}
                                     />
                                     <div>
                                         <h4 className="font-bold text-gray-900">{testimonial.name}</h4>

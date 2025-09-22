@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "netlify-build": "next build && next export"
-  },
+  "dev": "next dev",
+  "build": "next build",
+  "start": "next start",
+  "netlify-build": "next build && next export",
+  "lint": "next lint"
+},
+
   "dependencies": {
     "@netlify/next": "^1.4.9",
     "@radix-ui/react-dialog": "^1.1.15",

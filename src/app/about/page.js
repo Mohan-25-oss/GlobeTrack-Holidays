@@ -23,6 +23,7 @@ import {
     Mail,
     MessageCircle
 } from "lucide-react";
+import Link from "next/link";
 
 export default function About() {
     // Animation variants
@@ -330,6 +331,8 @@ export default function About() {
                         Let us help you plan the perfect trip. Our travel experts are ready to assist you.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
+
+                        <Link href="/contact" onClick={() => setIsOpen(false)}>
                         <motion.button
                             className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition-colors"
                             whileHover={{ scale: 1.05 }}
@@ -337,6 +340,7 @@ export default function About() {
                         >
                             Contact Us Now
                         </motion.button>
+                        </Link>
                         <motion.button
                             className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-colors"
                             whileHover={{ scale: 1.05 }}

@@ -127,7 +127,8 @@ const TouristVisa = () => {
                                 <Image
                                     src={destination.image}
                                     alt={destination.name}
-                                    className="w-full h-full object-cover"
+                                    width={500}
+                                    height={300}
                                 />
                                 <div className="absolute top-4 right-4 bg-white rounded-full px-3 py-1 shadow-md flex items-center">
                                     <span className="text-yellow-500 mr-1">★</span>
